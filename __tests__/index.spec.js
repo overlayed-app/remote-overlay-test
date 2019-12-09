@@ -2,7 +2,7 @@ const React = require('react')
 const { render } = require('@testing-library/react')
 require('@testing-library/jest-dom/extend-expect')
 
-const AppAlloc = require('../index')
+const AppAlloc = require('esm')(module)('../index').default
 
 const makeApp = () => {
   return AppAlloc(React, React.version)

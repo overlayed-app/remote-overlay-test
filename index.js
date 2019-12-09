@@ -1,7 +1,7 @@
 /**
  * A react-injectable component creator
  */
-module.exports = (React, version) => {
+export default (React, version) => {
   /**
    * The literal simpliest component possible
    *
