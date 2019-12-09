@@ -1,12 +1,15 @@
-const React = require('react')
-
 /**
- * The literal simpliest component possible
- *
- * Not transpilation needed
+ * A react-injectable component creator
  */
-module.exports = props => {
-  return React.createElement('div', undefined, [
-    React.createElement('p', { key: 'greeting' }, `Hello ${props.name || 'world'}`),
-  ])
+module.exports = (React, version) => {
+  /**
+   * The literal simpliest component possible
+   *
+   * Not transpilation needed
+   */
+  return props => {
+    return React.createElement('div', undefined, [
+      React.createElement('p', { key: 'greeting' }, `Hello ${props.name || 'world'}`),
+    ])
+  }
 }
